@@ -1,0 +1,31 @@
+.col {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+.col a {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #212121;
+}
+
+.col a:hover {
+    color: #2874f0;
+}
+
+.down_arrow {
+    padding: 0px;
+    transition: transform 0.5px;
+}
+
+.col:hover .down_arrow {
+    transform: rotate(-180deg);
+
+}
+
+.anchor {
+    display: flex;
+}
+

@@ -1,0 +1,40 @@
+<div class="search">
+    <div class="nav">
+        <div class="list">
+            <ul>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">TVs & Appliances</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Baby & Kids</a></li>
+                <li><a href="#">Home & Furniture</a></li>
+                <li><a href="#">Sports,Books & More</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Offer Zone</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="containerx" *ngFor="let product of searchResult">
+            <div class="items" >
+                <div class="img">
+                    <img src="{{product.image}}" alt="" width="200px" height="200px">
+                </div>
+                <div class="info">
+                    <h2>{{product.title}}</h2>
+                    <p><b>Category:</b>{{product.category}}</p>
+                    <p><span><b>Price:</b>{{product.price}}</span></p>
+                    <p><b>Rating:</b>{{product.rating.rate}}</p>
+                    <p><b>Description:</b>{{product.description}}</p>
+                </div>
+            </div>
+            <div class="button">
+                <button mat-raised-button color="primary">Add To Cart</button>
+            </div>
+        </div>
+        
+      
+       
+      
+    </div>
+</div>

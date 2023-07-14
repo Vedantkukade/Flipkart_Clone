@@ -1,0 +1,101 @@
+<div class="cart" [ngSwitch]="length">
+    <div class="container" *ngSwitchCase="'default'">
+        <div class="kart">
+            <div class="dashboard">
+                <div class="flipkart" routerLink="kartprice" routerLinkActive="active"><a>Flipkart</a></div>
+                <div class="grocery" routerLink="price" routerLinkActive="active"><a>Grocery</a></div>
+            </div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+    <div class="container" *ngSwitchCase="'local'">
+        <div class="kart">
+            <div class="dashboardx">
+                <div class="flipkartx" routerLink="kartprice" routerLinkActive="active"><a>Flipkart({{items}})</a></div>
+                <div class="groceryx" routerLink="price" routerLinkActive="active"><a>Grocery</a></div>
+            </div>
+            <router-outlet></router-outlet>
+        </div>
+        <div class="pricedetails">
+            <div class="content">
+                <div class="heading">PRICE DETAILS</div>
+                <div class="invoice">
+                    <div class="itemprice">
+                        <div>Price({{items}} items)</div>
+                        <div>₹{{ priceDetails.price | decimal}}</div>
+                    </div>
+                    <div class="itemprice">
+                        <div>Discount</div>
+                        <div class="color">{{this.priceDetails.discount}}</div>
+                    </div>
+                    <div class="itemprice">
+                        <div>Delivery Charges</div>
+                        <div class="color">{{this.priceDetails.dcharge}}</div>
+                    </div>
+
+                </div>
+                <div class="total">
+                    <div>Total Amount</div>
+                    <div class="color">₹{{this.priceDetails.total | decimal}}</div>
+                </div>
+                <div class="dismessage color">
+                    You will save ₹{{this.priceDetails.save | decimal}} on this order
+                </div>
+            </div>
+            <div class="safemessage">
+                <div class="safeimg">
+                    <img src="/assets/shield.svg" alt="">
+                </div>
+                <div class="safe">
+                    Safe and Secure Payments.Easy returns.100% Authentic Products.
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container" *ngSwitchCase="'user'">
+        <div class="kart">
+            <div class="dashboardx">
+                <div class="flipkartx" routerLink="kartprice" routerLinkActive="active"><a>Flipkart({{items}})</a></div>
+                <div class="groceryx" routerLink="price" routerLinkActive="active"><a>Grocery</a></div>
+            </div>
+            <router-outlet></router-outlet>
+        </div>
+        <div class="pricedetails">
+            <div class="content">
+                <div class="heading">PRICE DETAILS</div>
+                <div class="invoice">
+                    <div class="itemprice">
+                        <div>Price({{items}} items)</div>
+                        <div>₹{{ priceDetails.price | decimal}}</div>
+                    </div>
+                    <div class="itemprice">
+                        <div>Discount</div>
+                        <div class="color">{{this.priceDetails.discount}}</div>
+                    </div>
+                    <div class="itemprice">
+                        <div>Delivery Charges</div>
+                        <div class="color">{{this.priceDetails.dcharge}}</div>
+                    </div>
+
+                </div>
+                <div class="total">
+                    <div>Total Amount</div>
+                    <div  class="color">₹{{this.priceDetails.total | decimal}}</div>
+                </div>
+                <div class="dismessage color">
+                    You will save ₹{{this.priceDetails.save | decimal}} on this order
+                </div>
+            </div>
+            <div class="safemessage">
+                <div class="safeimg">
+                    <img src="/assets/shield.svg" alt="">
+                </div>
+                <div class="safe">
+                    Safe and Secure Payments.Easy returns.100% Authentic Products.
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,84 @@
+.login{
+    min-width: 400px;
+    max-width: 90%;
+    min-height: 200px;
+    max-height: 90vh;
+    border-radius: 4px;
+    margin: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.content{
+    height: 528px;
+    max-width: 750px;
+    min-width: 650px;
+    color: #212121;
+    border-radius: 2px;
+    background: #fff;
+    display: flex;
+}
+
+.bluepage{
+    background-image: url("/assets/login_img_.png");
+    background-position: center 85%;
+    background-repeat: no-repeat;
+    background-color: #2874f0;
+    width: 40%;
+    color: #fff;
+    padding: 40px 33px;
+  
+}
+.heading h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+.text{
+    color:#dbdbdb;
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 150%;
+}
+.loginpage{
+    width: 60%;
+    padding: 56px 35px 16px;
+
+}
+
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }
+
+  .submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.email mat-form-field{
+    width: 250px;
+}
+
+.subbutt button{
+    width: 250px;
+}
+
+.link{
+    margin-left: 88px;
+    margin-top: 140px;
+    font-size: 16px;
+    color: #2874f0;
+}
+.link a{
+    text-decoration: none;
+}
+.link a:hover{
+text-decoration: underline;
+}
+
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 

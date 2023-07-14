@@ -1,0 +1,64 @@
+<div class="signup">
+    <div class="login">
+
+        <div class="content">
+
+
+            <div class="bluepage">
+                <div class="blue">
+                    <div class="heading">
+                        <h2>Looks like you're new here!</h2>
+                    </div>
+                    <div class="text">
+                        <p>Sign Up to get started</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="loginpage">
+                <div class="data">
+                    <div class="submit">
+                        <form [formGroup]="loginform">
+                            <div class="example-container email">
+                                <mat-form-field>
+                                    <mat-label>Enter your Name</mat-label>
+                                    <input matInput formControlName="name">
+                                    <mat-error></mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="example-container email">
+                                <mat-form-field>
+                                    <mat-label>Enter your Email</mat-label>
+                                    <input matInput formControlName="email">
+                                    <mat-error></mat-error>
+                                </mat-form-field>
+                            </div>
+
+                            <div class="example-container password">
+                                <mat-form-field>
+                                    <mat-label>Enter your password</mat-label>
+                                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                                    <button mat-icon-button matSuffix (click)="hide = !hide"
+                                        [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                    </button>
+                                </mat-form-field>
+                            </div>
+                            <div class="subbutt">
+                                <button mat-raised-button color="warn" type="submit" [disabled]="!loginform.valid" (click)="postD()">Submit</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <div class="link">
+                        <span>Existing User?<a routerLink="/usermodule/userlogin"> Click to Login</a></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>

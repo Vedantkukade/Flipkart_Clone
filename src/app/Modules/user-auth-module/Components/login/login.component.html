@@ -1,0 +1,55 @@
+<div class="signup">
+    <div class="login">
+
+        <div class="content">
+
+
+            <div class="bluepage">
+                <div class="blue">
+                    <div class="heading">
+                        <h2>Login</h2>
+                    </div>
+                    <div class="text">
+                        <p>Get access to your Orders, Wishlist and Recommendations</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="loginpage">
+                <div class="data">
+                    <div class="submit">
+                        <form [formGroup]="loginform">
+                            <div class="example-container email">
+                                <mat-form-field>
+                                    <mat-label>Enter your email</mat-label>
+                                    <input matInput formControlName="email" required>
+                                    <mat-error></mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="example-container password">
+                                <mat-form-field>
+                                    <mat-label>Enter your password</mat-label>
+                                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                                    <button mat-icon-button matSuffix (click)="hide = !hide"
+                                        [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                    </button>
+                                </mat-form-field>
+                            </div>
+                            <div class="subbutt">
+                                <button mat-raised-button mat-dialog-close color="warn" type="submit" (click)="userlogin()" [disabled]="!loginform.valid">Submit</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <div class="link">
+                        <span>New to Flipkart?<a  routerLink="/usermodule/usersignin" (click)="closedialog()" > Create an account</a></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>

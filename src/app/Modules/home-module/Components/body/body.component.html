@@ -1,0 +1,204 @@
+<app-indexes></app-indexes>
+
+<app-carousel></app-carousel>
+
+
+<div class="sliders">
+    <div class="section1">
+        <div class="background">
+            <div class="content">
+                <h2>Best of Electronics</h2>
+                <div class="buttone">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="centerS2 height">
+        <div id="carouselExampleControls3" class="carousel carousel-dark slide height" data-bs-ride="carousel">
+            <div class="carousel-inner height">
+                <div class="carousel-item active height">
+                    <div class="card-wrapper container-sm d-flex justify-content-around height">
+                        <div class="card" *ngFor="let item of Electronics2">
+                            <div class="img">
+                                <img src="{{ item.image }}" alt="" />
+                            </div>
+                            <h5 class="h5">
+                                {{ item.title }}
+                            </h5>
+
+                            <div class="price">From{{ item.price | currency : "INR" }}</div>
+                            <button mat-raised-button color="primary" (click)="AddToCart(item)">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item height">
+                    <div class="card-wrapper container-sm d-flex justify-content-around height">
+                        <div class="card" *ngFor="let item of Electronics">
+                            <div class="img">
+                                <img src="{{ item.image }}" alt="" />
+                            </div>
+                            <h5 class="h5">
+                                {{ item.title }}
+                            </h5>
+
+                            <div class="price">From{{ item.price | currency : "INR" }}</div>
+                            <button mat-raised-button color="primary" (click)="AddToCart(item)">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev"
+                    class="prev prev-button button">
+                    <span aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    <mat-icon class=" prev-icon">keyboard_arrow_left</mat-icon>
+                </button>
+                <button type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next"
+                    class="next next-button button" style="float: right">
+                    <span aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    <mat-icon class=" next-icon">keyboard_arrow_right</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="jet">
+        <div class="section">
+            <div class="spicejet">
+                <div class="imgx">
+                    <img src="/assets/spicejet.webp" alt="" width="220px" height="337px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="sliders">
+    <div class="section1">
+        <div class="background2">
+            <div class="content">
+                <h2>Beauty,Toys & More</h2>
+                <div class="buttone">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="centerS2 height">
+        <div id="carouselExampleControls4" class="carousel carousel-dark slide height" data-bs-ride="carousel">
+            <div class="carousel-inner height">
+                <div class="carousel-item active height">
+                    <div class="card-wrapper container-sm d-flex justify-content-around height">
+                        <div class="card" *ngFor="let item of Beauty">
+                            <div class="img">
+                                <img src="{{ item.image }}" alt="" />
+                            </div>
+                            <h5 class="h5">
+                                {{ item.title }}
+                            </h5>
+
+                            <div class="price">From{{ item.price | currency : "INR" }}</div>
+                            <button mat-raised-button color="primary" (click)="AddToCart(item)">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item height">
+                    <div class="card-wrapper container-sm d-flex justify-content-around height">
+                        <div class="card" *ngFor="let item of beauty2">
+                            <div class="img">
+                                <img src="{{ item.image }}" alt="" />
+                            </div>
+                            <h5 class="h5">
+                                {{ item.title }}
+                            </h5>
+
+                            <div class="price">From{{ item.price | currency : "INR" }}</div>
+                            <button mat-raised-button color="primary" (click)="AddToCart(item)">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev"
+                    class="prev prev-button button">
+                    <span aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    <mat-icon class=" prev-icon">keyboard_arrow_left</mat-icon>
+                </button>
+                <button type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next"
+                    class="next next-button button" style="float: right">
+                    <span aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    <mat-icon class=" next-icon">keyboard_arrow_right</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="sliders">
+    <div class="section1">
+        <div class="background3">
+            <div class="content">
+                <h2>Back To Campus Deals</h2>
+                <div class="buttone">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="centerS2 height">
+        <div id="carouselExampleControls5" class="carousel carousel-dark slide height" data-bs-ride="carousel">
+            <div class="carousel-inner height">
+                <div class="carousel-item active height">
+                    <div class="card-wrapper container-sm d-flex justify-content-around height">
+                        <div class="card" *ngFor="let item of Campus">
+                            <div class="img">
+                                <img src="{{ item.image }}" alt="" />
+                            </div>
+                            <h5 class="h5">
+                                {{ item.title }}
+                            </h5>
+
+                            <div class="price">From{{ item.price | currency : "INR" }}</div>
+                            <button mat-raised-button color="primary" (click)="AddToCart(item)">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item height">
+                    <div class="card-wrapper container-sm d-flex justify-content-around height">
+                        <div class="card" *ngFor="let item of campus2">
+                            <div class="img">
+                                <img src="{{ item.image }}" alt="" />
+                            </div>
+                            <h5 class="h5">
+                                {{ item.title }}
+                            </h5>
+
+                            <div class="price">From{{ item.price | currency : "INR" }}</div>
+                            <button mat-raised-button color="primary" (click)="AddToCart(item)">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev"
+                    class="prev prev-button button">
+                    <span aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    <mat-icon class=" prev-icon">keyboard_arrow_left</mat-icon>
+                </button>
+                <button type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next"
+                    class="next next-button button" style="float: right">
+                    <span aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    <mat-icon class=" next-icon">keyboard_arrow_right</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

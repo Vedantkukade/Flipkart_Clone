@@ -1,0 +1,143 @@
+.kart{
+
+    height: auto;
+    margin-left: 30px;
+}
+
+.dashboard{
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:white;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.145);
+    margin-bottom: 18px;
+}
+.dashboard a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2a55e5;
+
+ 
+}
+
+.flipkart, .grocery{
+    height: 50px;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.flipkartx,.groceryx{
+    height: 50px;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.flipkartx:hover,.groceryx:hover,.flipkart:hover, .grocery:hover{
+
+    cursor: pointer;
+}
+
+.dashboardx{
+    width: 800px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:white;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.145);
+    margin-bottom: 18px;
+}
+
+.dashboardx a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2a55e5;
+
+ 
+}
+.active{
+    border-bottom: 2px solid #2a55e5;
+}
+
+
+.container{
+display: flex;
+}
+
+.pricedetails{
+    margin-left: 30px;
+    width: 400px;
+}
+
+.content{
+    background-color: white;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.145);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.168);
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+.invoice{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.14);
+   margin-top:20px
+
+}
+
+.itemprice{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.color{
+    color:#388e3c;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.126);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.dismessage{
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.safemessage{
+    display: flex;
+    color: #878787;
+    margin-top: 20px;
+}
+
+.safe{
+    margin-left: 10px;
+    font-size: 15px;
+}

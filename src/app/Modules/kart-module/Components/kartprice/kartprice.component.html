@@ -1,0 +1,148 @@
+<div class="cart" [ngSwitch]="length">
+  <div class="kartitems" *ngSwitchCase="'default'">
+    <div class="kart">
+      <div class="items">
+        <div class="image">
+          <img src="/assets/kartimage.webp" alt="" width="221px" height="162px">
+        </div>
+        <div class="login">
+          <div class="missing">Missing Cart items?</div>
+          <div class="message">
+            <p>Login to see the items you added previously</p>
+          </div>
+          <div class="button">
+            <button mat-raised-button color="warn" routerLink="/usermodule/userlogin">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="kartitemsx" *ngSwitchCase="'local'">
+    <div class="pincode">
+      <div class="pininfo">
+        <div class="add">From Saved Addresses</div>
+        <div><button mat-raised-button>Enter Delivery Pincode</button></div>
+      </div>
+    </div>
+    <div class="mainitems">
+      <div class="cartdata" *ngFor="let item of cartitems">
+        <div class="cartdatax">
+          <div class="img">
+            <img src="{{item.image}}" alt="" width="180px" height="180px">
+          </div>
+          <div class="name">
+            <div class="title">
+              <div class="maintitle">
+                <a >{{item.title}} </a>
+              </div>
+              <div class="delivery">
+                <p>Delivery by Tue Jul 11| <span style="color:green">Free <span style="text-decoration:line-through;">₹40</span></span></p>
+              </div>
+            </div>
+            <div class="desc">
+              {{item.description}}
+            </div>
+            <div class="seller">
+              <p>Seller:ROGELECTRONICS <span><img src="/assets/fa_a.png" alt="" width="70px" height="18px"></span></p>
+            </div>
+            <div class="price">
+              <div class="cr" style="font-size: 16px;">₹{{item.price}}</div>
+              <div class="cr_message">Best price with bank offers:₹{{(item.price-(item.price/10)) | decimal}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="inc_dec">
+  
+          <div class="quantity">
+            <div class="decrement"><mat-icon (click)="decrement()">remove_circle_outline</mat-icon></div>
+            <div class="quantdisplay" >
+              <!-- <input type="text" value="1" #quant> -->
+              {{counter}}
+            </div>
+            <div class="increment"><mat-icon (click)="increment()">add_circle_outline</mat-icon></div>
+          </div>
+  
+          <div class="save">
+            SAVE FOR LATER
+          </div>
+  
+          <div class="remove">
+            <a (click)="remove(item.id)">REMOVE</a>
+          </div>
+        </div>
+      </div>
+      
+      
+
+    </div>
+
+    <div class="placeorder">
+      <div class="button"><button mat-raised-button color="warn">Place Order</button></div>
+    </div>
+
+  </div>
+
+  <div class="kartitemsx" *ngSwitchCase="'user'">
+    <div class="pincode">
+      <div class="pininfo">
+        <div class="add">From Saved Addresses</div>
+        <div><button mat-raised-button>Enter Delivery Pincode</button></div>
+      </div>
+    </div>
+    <div class="mainitems">
+      <div class="cartdata" *ngFor="let item of cartitems">
+        <div class="cartdatax">
+          <div class="img">
+            <img src="{{item.image}}" alt="" width="180px" height="180px">
+          </div>
+          <div class="name">
+            <div class="title">
+              <div class="maintitle">
+                <a >{{item.title}} </a>
+              </div>
+              <div class="delivery">
+                <p>Delivery by Tue Jul 11| <span style="color:green">Free <span style="text-decoration:line-through;">₹40</span></span></p>
+              </div>
+            </div>
+            <div class="desc">
+              {{item.description}}
+            </div>
+            <div class="seller">
+              <p>Seller:ROGELECTRONICS <span><img src="/assets/fa_a.png" alt="" width="70px" height="18px"></span></p>
+            </div>
+            <div class="price">
+              <div class="cr" style="font-size: 16px;">₹{{item.price}}</div>
+              <div class="cr_message">Best price with bank offers:₹{{(item.price-(item.price/10)) | decimal}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="inc_dec">
+  
+          <div class="quantity">
+            <div class="decrement"><mat-icon (click)="decrement()">remove_circle_outline</mat-icon></div>
+            <div class="quantdisplay" >
+             
+              {{counter}}
+            </div>
+            <div class="increment"><mat-icon (click)="increment()">add_circle_outline</mat-icon></div>
+          </div>
+  
+          <div class="save">
+            SAVE FOR LATER
+          </div>
+  
+          <div class="remove">
+            <a (click)="removeuser(item.id)">REMOVE</a>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+
+    <div class="placeorder">
+      <div class="button"><button mat-raised-button color="warn">Place Order</button></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="cart" [ngSwitch]="length">
+  <div class="kartitems" *ngSwitchCase="'default'">
+    <div class="kart">
+      <div class="items">
+        <div class="image">
+          <img src="/assets/basket.webp" alt="" width="221px" height="162px">
+        </div>
+        <div class="login">
+          <div class="missing">Your Basket is empty!</div>
+          <div class="message">
+            <p>Enjoy Upto 50% Savings on Grocery</p>
+          </div>
+          <div class="button">
+            <button mat-raised-button color="primary" routerLink="">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="kartitemsx" *ngSwitchCase="'local'">
+    <div class="mainitems">
+
+    </div>
+
+    <div class="placeorder">
+      <div class="button"><button mat-raised-button color="warn">Place Order</button></div>
+    </div>
+  </div>
+  <div class="kartitemsx" *ngSwitchCase="'user'">
+    <div class="mainitems">
+
+    </div>
+
+    <div class="placeorder">
+      <div class="button"><button mat-raised-button color="warn">Place Order</button></div>
+    </div>
+  </div>
+</div>
+

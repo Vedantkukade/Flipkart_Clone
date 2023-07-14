@@ -1,0 +1,83 @@
+<p>
+  <mat-toolbar color="primary">
+    <div class="flipkart">
+      <span routerLink=""><img src="/assets/fk-plus.png" alt="" width="100px" height="auto"></span>
+    </div>
+
+    <div class="searchbox">
+      <form class="example-form">
+        <input type="text" placeholder="Search for products,brands and more" class="input" #searchvalue>
+     
+      </form>
+      <mat-icon (click)="search(searchvalue.value)">search</mat-icon>
+    </div>
+
+    <div class="login" *ngIf="navbar==='userlogout'">
+      <a (click)="openDialog()">Login</a>
+      <div class="loginlist">
+        <div class="signup">
+          <ul>
+            <li>New Customer?</li>
+            <li><a routerLink="/usermodule/usersignin">Sign Up</a> </li>
+          </ul>
+        </div>
+        <div class="signuplist">
+          <div class="ly" routerLink="usermodule/userlogin"> <mat-icon>account_circle</mat-icon><a
+              routerLink="usermodule/userlogin">My Profile</a></div>
+          <div class="my"><mat-icon>auto_graph</mat-icon><a href="#">FlipkarT Plus Zone</a> </div>
+          <div class="my"><mat-icon>account_balance_wallet</mat-icon><a href="#">Orders</a></div>
+          <div class="my"><mat-icon>favorite</mat-icon><a href="#">Wishlist</a></div>
+          <div class="my"> <mat-icon>view_kanban</mat-icon><a href="#">Rewards</a></div>
+          <div class="my"><mat-icon>card_giftcard</mat-icon><a href="#">Gift Cards</a></div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="login" *ngIf="navbar==='userlogin'">
+      <p>{{ username | titlecase}}</p>
+      <div class="loginlist2">
+        <div class="signup">
+          <ul>
+            <li>Welcome, {{ username | titlecase}}</li>
+         
+          </ul>
+        </div>
+        <div class="signuplist">
+          <div class="ly" routerLink="usermodule/userlogin"> <mat-icon>account_circle</mat-icon><a
+              routerLink="usermodule/userlogin">My Profile</a></div>
+          <div class="my"><mat-icon>auto_graph</mat-icon><a href="#">FlipkarT Plus Zone</a> </div>
+          <div class="my"><mat-icon>account_balance_wallet</mat-icon><a href="#">Orders</a></div>
+          <div class="my"><mat-icon>favorite</mat-icon><a href="#">Wishlist</a></div>
+          <div class="my"> <mat-icon>view_kanban</mat-icon><a href="#">Rewards</a></div>
+          <div class="my"><mat-icon>card_giftcard</mat-icon><a href="#">Gift Cards</a></div>
+          <div class="my2"><mat-icon>power_settings_new</mat-icon><a (click)="logout()">Log Out</a></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="become">
+      <a href="#">Become a Seller</a>
+    </div>
+    <div class="more">
+      <a href="#">More</a>
+      <mat-icon class="down_arrow">keyboard_arrow_down</mat-icon>
+      <div class="morelist">
+        <div class="mo"><mat-icon>notifications</mat-icon>Notification Preferences</div>
+        <div class="mo"><mat-icon> live_help</mat-icon>24X7 Customer Care</div>
+        <div class="mo"><mat-icon>trending_up</mat-icon>Advertise</div>
+        <div class="mo"><mat-icon>get_app</mat-icon>Download App</div>
+      </div>
+    </div>
+    <div class="cart">
+      <button mat-icon-button class="example-icon favorite-icon" routerLink="kartmodule/kartcomp"
+        aria-label="Example icon-button with heart icon">
+        <mat-icon matBadge="{{matBadge}}" matBadgeColor="warn">shopping_cart</mat-icon>
+
+      </button>
+      <p> Cart</p>
+    </div>
+
+
+  </mat-toolbar>
+</p>

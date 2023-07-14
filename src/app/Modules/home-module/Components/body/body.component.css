@@ -1,0 +1,204 @@
+.background {
+  background-image: url("/assets/electronicsviewall.webp");
+  background-position: 0px bottom;
+  width: 230px;
+  height: 350px;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 28px 10px 124px;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.content h2 {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.buttone a {
+  background-color: #2874f0;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+.all {
+  background-color: #f1f3f6;
+}
+
+.sliders {
+  display: flex;
+  justify-content: center;
+  height: 370px;
+  margin: 13px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.199);
+
+}
+
+
+
+.center {
+  width: 969px;
+  height: 100%;
+  background-color: #fff;
+  margin: 0px 9px 0px 0px;
+}
+
+.height {
+  height: 100%;
+}
+
+.card {
+  padding: 20px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+
+
+.centerS2 {
+  width: 82%;
+  height: 100%;
+  background-color: #fff;
+  margin: 0px 0px 0px 0px;
+}
+
+.img {
+  width: 174px;
+
+}
+
+.img img {
+  width: 100%;
+}
+
+.h5 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100px
+}
+
+.price {
+  font-size: 16px;
+  color: #388e3c;
+
+}
+
+
+
+
+.button {
+  background-color: aliceblue;
+  width: 60px;
+  height: 110px;
+  border: 1px solid white;
+
+  position: absolute;
+
+}
+
+.prev-button {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.next-button {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.prev {
+  bottom: 100px;
+  left: 0px;
+}
+
+.next {
+
+  bottom: 100px;
+  right: 0px;
+}
+
+.prev-icon,
+.next-icon {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.section {
+
+  display: block;
+
+
+  background-color: #fff;
+
+  margin: 5px
+}
+
+.jet {
+
+  width: 230px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.199);
+  height: 350px;
+  margin: 10px;
+
+
+}
+
+.spicejet {
+  display: flex;
+
+  align-items: center;
+
+}
+
+.imgx {
+
+
+  cursor: pointer;
+}
+
+.background2 {
+  background-image: url("/assets/beautyback.webp");
+  background-position: 0px bottom;
+  width: 230px;
+  height: 350px;
+  background-repeat: no-repeat;
+}
+
+.background3 {
+  background-position: 0px bottom;
+  width: 230px;
+  height: 350px;
+  background-repeat: no-repeat;
+}

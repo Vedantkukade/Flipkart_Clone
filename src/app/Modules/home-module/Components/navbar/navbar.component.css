@@ -1,0 +1,276 @@
+.flipkart {
+  margin-left: 200px;
+  cursor: pointer;
+}
+
+.searchbox {
+  margin: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchbox mat-icon {
+  color: #2874f0;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+
+
+.input {
+  padding: 0 16px;
+  border-radius: 2px 0 0 2px;
+  border: 0;
+  outline: 0 none;
+  font-size: 14px;
+  height: 36px;
+  width: 400px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.login a {
+  text-decoration: none;
+  color: #2874f0;
+  background-color: white;
+  width: 100px;
+  height: 36px;
+  padding-left: 28px;
+  font-size: 16px;
+
+}
+
+.login p{
+margin-top: 15px;
+margin-left: 10px;
+  font-size: 16px;
+
+}
+
+.login:hover .loginlist {
+  display: block;
+}
+
+.loginlist {
+  width: 270px;
+  height: 297px;
+  position: absolute;
+  background-color: white;
+  color:rgba(0, 0, 0, 0.779);
+  top: 45px;
+  left: -80px;
+  display: none;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.loginlist::before{
+  position: absolute;
+  content: "";
+  margin-left: 110px;
+  top:-8px;
+  border-top:0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+.login:hover .loginlist2 {
+  display: block;
+}
+
+.loginlist2 {
+  width: 270px;
+  height: 340px;
+  position: absolute;
+  background-color: white;
+  color:rgba(0, 0, 0, 0.779);
+  top: 45px;
+  left: -80px;
+  display: none;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.loginlist2::before{
+  position: absolute;
+  content: "";
+  margin-left: 110px;
+  top:-8px;
+  border-top:0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid white;
+}
+.signup ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 16px;
+  height: 45px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.127);
+
+}
+
+.signup ul li a:hover{
+text-decoration: underline;
+}
+
+
+.ly {
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  margin-top: -13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.127);
+}
+
+.my , .my2{
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.127);
+  
+}
+
+
+.ly mat-icon,
+.my mat-icon ,
+.my2 mat-icon{
+  padding-top: 6px;
+  color: #2874f0;
+  font-size: 20px;
+
+}
+
+
+.ly a,
+.my a{
+  color: rgba(0, 0, 0, 0.779);
+}
+
+.my2 a{
+  color: #2874f0;
+}
+.my2 a:hover{
+  text-decoration: underline;
+}
+
+
+
+.more {
+  position: relative;
+}
+
+.morelist {
+  height: 185px;
+  width: 230px;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  top: 40px;
+  left: -100px;
+  display: none;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.morelist::before{
+  position: absolute;
+  content: "";
+  margin-left: 110px;
+  top:-8px;
+  border-top:0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+.mo {
+
+  padding: 5px;
+  padding-left: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.127);
+  color:rgba(0, 0, 0, 0.779) ;
+
+}
+
+.mo mat-icon{
+  color: #2874f0;
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+
+
+.more:hover .morelist {
+  display: block;
+}
+
+.become,
+.more,
+.cart {
+  margin: 10px;
+  margin-left: 35px;
+}
+
+.more a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.more .down_arrow {
+  padding-top: 7px;
+  transition: transform 0.5px;
+}
+
+.more:hover .down_arrow {
+  transform: rotate(-180deg);
+  padding-top: 0px;
+}
+
+.become a {
+  text-decoration: none;
+  line-height: 20px;
+  font-size: 16px;
+  letter-spacing: .1px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.cart {
+  display: flex;
+  padding-top: 11px;
+}
+
+.cart button,
+p {
+
+  font-size: 16px;
+  font-weight: 500;
+
+
+}
+
+.cart button mat-icon {
+
+  width: 20px;
+
+}
+
+.cart p {
+  margin-top: 8px;
+}
